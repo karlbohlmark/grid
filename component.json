@@ -12,8 +12,7 @@
   "development": {},
   "license": "MIT",
   "scripts": [
-    "index.js",
-    "template.js"
+    "index.js"
   ],
   "styles": [
     "grid.css"

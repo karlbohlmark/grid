@@ -1,0 +1,27 @@
+<!doctype html>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+
+<h1>Everybody loves grids</h1>
+
+<table id="target"></table>
+<script src="build/build.js"></script>
+<script>
+	var Grid = require('grid/index.js');
+	var Collection = require('karlbohlmark-observable-collection/index.js');
+	var collection = new Collection();
+	var el = document.querySelector('#target');
+	var columns = [{
+		name: 'name',
+		sortable: true
+	}, {
+		name: 'description',
+		title: 'Description'
+	}];
+	var grid = new Grid(el, collection, columns);
+	collection.push({
+		name: 'Karl Böhlmark',
+		description: 'Developer'})
+	
+	window.collection = collection;
+</script>

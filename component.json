@@ -1,0 +1,21 @@
+{
+  "name": "grid",
+  "repo": "karlbohlmark/grid",
+  "description": "Editable grid component",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "component/emitter": "*",
+    "karlbohlmark/observable-collection": "*",
+    "component/delegates": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "scripts": [
+    "index.js",
+    "template.js"
+  ],
+  "styles": [
+    "grid.css"
+  ]
+}
